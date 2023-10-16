@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+    @apply relative
+}
+
+.app-container .overlay {
+@apply bg-green-950 absolute z-50 w-full h-screen bg-opacity-70
+}
+
+.app-container .bg {
+    @apply w-screen h-screen absolute
+}
+
+.app-container .body {
+    @apply absolute z-[999] w-screen h-screen 
+}
+
+.app-container .body .header {
+    @apply border-b py-3
+}
+
+.app-container .body .header .header-content {
+    @apply flex flex-row justify-between items-center max-w-[85%] mx-auto
+}
+
+.app-container .body .header .header-content img {
+    @apply w-[70px]  md:w-[100px] md:h-[70px]
+}
+
+.app-container .body .header .header-content h1 {
+    @apply text-lg md:text-2xl font-medium text-green-950
+}
+
+.app-container .body .let-count form {
+    @apply flex flex-col items-center justify-center h-[20vh]
+}
+
+.app-container .body .let-count form input {
+    @apply w-[200px] text-black
+}
+
+.app-container .body .let-count .counter {
+    @apply flex flex-row items-center justify-center gap-5 md:gap-8  h-[30vh]
+}
+
+.app-container .body .let-count .counter .count-wrapper {
+    @apply flex flex-col items-center
+}
+
+.app-container .body .let-count .counter .count-wrapper p {
+    @apply text-2xl font-bold
+}
